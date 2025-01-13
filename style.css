@@ -1,0 +1,269 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Roboto+Slab:wght@400;500&display=swap');
+
+/* Global Styles */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Links */
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #004d99;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8em;
+    font-weight: 700;
+}
+
+/* Navigation */
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-links li {
+    margin: 0 15px;
+}
+
+nav .nav-links a {
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+nav .nav-links a.active {
+    background-color: #004d99;
+    font-weight: bold;
+}
+
+nav .nav-links a:hover {
+    background-color: #575757;
+}
+
+/* Avoid content overlap with fixed nav */
+body {
+    padding-top: 70px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #eaf6ff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+    color: #004d99;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #555;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #004d99;
+    color: white;
+    border-radius: 5px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #003366;
+    transform: scale(1.05);
+}
+
+/* Call-to-Action Section */
+#home-page #call-to-action {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #004d99;
+    color: white;
+    margin-top: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto Slab', serif;
+}
+
+#home-page #call-to-action h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+#home-page #call-to-action p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+    max-width: 800px;
+    margin: 0 auto;
+    font-style: italic;
+    color: #ddd;
+}
+
+#home-page #call-to-action .btn {
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1.1em;
+    background-color: #ffcc00;
+    color: #004d99;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+#home-page #call-to-action .btn:hover {
+    background-color: #e6b800;
+    color: white;
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    #home-page #call-to-action h2 {
+        font-size: 2em;
+    }
+
+    #home-page #call-to-action p {
+        font-size: 1em;
+    }
+
+    #home-page #call-to-action .btn {
+        padding: 10px 20px;
+        font-size: 1em;
+    }
+}
+
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+section h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #004d99;
+    font-weight: bold;
+}
+
+section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Card Styles */
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    flex: 1 1 calc(45% - 20px);
+    max-width: 400px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.card h3, .card h4 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #004d99;
+    font-weight: bold;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.card a {
+    color: #004d99;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: auto;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+}
